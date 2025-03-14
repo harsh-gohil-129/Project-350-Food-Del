@@ -5,6 +5,9 @@
     color: blue;
     font-size :16px;
 }
+.add form {
+    gap:20px;
+}
 .app-content {
     display:flex;
 
@@ -24,7 +27,7 @@
 }
 
 .add-product-name input , .add-product-description textarea{
-    padding:10 px 
+    padding:10 px ;
 }
 
 .add-category-price {

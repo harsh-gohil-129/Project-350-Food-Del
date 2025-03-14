@@ -21,9 +21,15 @@ a{
 hr{
     border:none;
     height : 1px;
-background-color: #a9a9a9;
+background-color: #1f3c63b8;
 }
 
 .app-content {
     display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
