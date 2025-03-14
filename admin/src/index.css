@@ -33,3 +33,7 @@ background-color: #1f3c63b8;
     flex-direction: column;
     gap:10px;
 }
+
+.cursor{
+    cursor:pointer;
+}
