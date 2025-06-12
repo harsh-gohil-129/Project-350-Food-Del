@@ -51,6 +51,9 @@ const placeOrder = async (event) => {
     const { session_url } = response.data;   
     window.loaction.replace(session_url);
   }
+  else {
+    alert("Error");
+  }
 
 }
  
