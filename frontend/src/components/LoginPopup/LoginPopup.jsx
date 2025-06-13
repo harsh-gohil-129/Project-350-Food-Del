@@ -76,6 +76,6 @@ else {
      
   </div>
   )
-}
+
 
 export default LoginPopup

@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { food_list } from "../assets/assets";
 
 export const StoreContext = createContext(null)
-const StoreContextProvider = (props) =>{
+const StoreContextProvider = async(props) =>{
 
   const [cartItems,setCartItems] = useState({});
    const url = "http://localhost:4000";
@@ -27,7 +27,7 @@ await axios.post(url+"/api/cart/add",{itemId},{headers:{token}})
   }
 
   if (token) {
-   await axios.post(url+"/api/cart/remove",{itemId},{headers:{token}})
+   await async axios.post(url+"/api/cart/remove",{itemId},{headers:{token}})
         }
      }
   const getTotalCartAmount = () =>{
