@@ -56,8 +56,15 @@ const placeOrder = async (event) => {
   }
 
 }
- 
-
+const navigate = useNavigate();
+useEffect(() => {
+  if (!token) {
+    navigate('/cart')
+  }
+  else if (getTotalCartAmount() === 0) {
+    navigate('/cart')
+  }
+},[token])
 
 
 
