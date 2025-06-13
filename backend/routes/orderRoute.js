@@ -6,7 +6,7 @@ import {
   verifyOrder,
   userOrder,
   listOrders,
-} from "../controllers/order";
+} from "../controllers/orderController.js";
 
 const orderRouter = express.Router();
 

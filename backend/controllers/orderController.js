@@ -1,9 +1,12 @@
-import Stripe from "/stripe";
+import Stripe from "stripe";
 import orderModel from "../models/orderModel";
-import stripe from "stripe";
 import userModel from "../models/userModel";
 
+// Use the Stripe constructor to create an instance
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+// Your controller logic here
+
 
 //placing user order for frontend
 

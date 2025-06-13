@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import userModel from "../models/userModel";
+import userModel from "../models/userModel.js";
 import validator from "validator";
 
 //login user

@@ -1,110 +1,67 @@
 import "./Footer.css";
-import React, { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
 import { assets } from "../../assets/assets";
-import { StoreContext } from "../../context/StoreContext";
 
-const Navbar = ({ setShowLogin }) => {
-  const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
-  const [menu, setMenu] = useState("home");
-  const navigate = useNavigate();
-
-  const logout = () => {
-    localStorage.removeItem("token");
-    setToken("");
-    navigate("/");
-  };
-
+const Footer = () => {
   return (
-    <div className="navbar">
-      <Link to="/">
-        <img src={assets.logo} alt="" className="logo" />
-      </Link>
-      <ul className="navbar-menu">
-        <Link
-          to="/"
-          onClick={() => setMenu("home")}
-          className={menu === "home" ? "active" : ""}
-        >
-          home
-        </Link>
-        <a
-          href="#explore-menu"
-          onClick={() => setMenu("menu")}
-          className={menu === "menu" ? "active" : ""}
-        >
-          menu
-        </a>
-        <a
-          href="#app-download"
-          onClick={() => setMenu("mobile-app")}
-          className={menu === "mobile-app" ? "active" : ""}
-        >
-          mobile-app
-        </a>
-        <a
-          href="#footer"
-          onClick={() => setMenu("contact-us")}
-          className={menu === "contact-us" ? "active" : ""}
-        >
-          contact us
-        </a>
-      </ul>
-      <div className="navbar-right">
-        <img src={assets.search_icon} alt="" />
-        <div className="navbar-search-icon">
-          <Link to="/cart">
-            <img src={assets.basket_icon} alt="" />
-          </Link>
-          <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
+    <div className='footer' id='footer'>
+      <div className='footer-content'>
+        <div className="footer-content-left">
+           <img src={assets.logo} alt="logo"/>
+           <p>Fresh flavors for every craving — discover the future of food with Tomato in 2025. Your favorite meals, delivered with love and taste.</p>
+         {/* <div className="footer-social-icons">
+            <img src={assets.facebook_icon} alt="facebook" />
+            <img src={assets.twitter_icon} alt="twitter" />
+            <img src={assets.linkedin_icon} alt="linkedin" />
+           </div> */}
+          <div className="footer-social-icons">
+  <a
+    href="https://www.facebook.com/najmunnahar360"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src={assets.facebook_icon} alt="facebook" />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/najmunnaharhira360"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src={assets.linkedin_icon} alt="linkedin" />
+  </a>
+  <a
+    href="https://twitter.com/najmunnaharhira360"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src={assets.twitter_icon} alt="twitter" />
+  </a>
+</div>
+
+        </div>  
+        <div className="footer-content-center">
+           {/* <h2>COMPANY</h2> */}
+           <ul>
+             <li>Home</li>
+             <li>About us</li>
+             <li>Delivery</li>
+             <li>Privacy policy</li>
+           </ul>
         </div>
-        {!token ? (
-          <button onClick={() => setShowLogin(true)}>sign in</button>
-        ) : (
-          <div className="navbar-profile">
-            <img src={assets.profile_icon} alt=" " />
-            <ul className="nav-profile-dropdown">
-              <li onClick={() => navigate("/myorders")}>
-                <img src={assets.bag_icon} alt=" " />
-                <p>Orders</p>
-              </li>
-              <hr />
-              <li onClick={logout}>
-                <img src={assets.logout_icon} alt=" " />
-                <p>Logout</p>
-              </li>
+        <div className="footer-content-right">
+            <h2>GET IN TOUCH</h2>
+            <ul>
+              <li>+8801647431836</li>
+              <li>contact@tomato.com</li>
             </ul>
-          </div>
-        )}
-        <div className="social-links">
-          <a
-            href="https://www.facebook.com/najmunnaharhira360"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={assets.facebook_icon} alt="Facebook" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/najmunnaharhira360"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={assets.linkedin_icon} alt="LinkedIn" />
-          </a>
-          <a
-            href="https://twitter.com/najmunnaharhira360"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <img src={assets.twitter_icon} alt="Twitter" />
-          </a>
         </div>
       </div>
+      <hr/>
+      <p className="footer-copyright">
+        © 2025 Tomato.com — All Rights Reserved.
+      </p>
     </div>
   );
 };
 
-export default Navbar;
+export default Footer;
