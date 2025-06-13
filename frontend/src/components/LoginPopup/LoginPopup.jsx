@@ -1,8 +1,9 @@
 import "./LoginPopup.css";
 import React, { useContext, useEffect, useState } from "react";
-import axios from "axios";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../../context/StoreContext";
+
+// import axios from "axios";
 
 const LoginPopup = ({ setShowLogin }) => {
   const { url, setToken } = useContext(StoreContext);
