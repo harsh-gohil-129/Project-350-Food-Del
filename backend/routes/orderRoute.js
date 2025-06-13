@@ -1,11 +1,18 @@
 import authMiddleware from "../middleware/auth.js";
 import express from "express";
 
+// import {
+//   placeOrder,
+//   verifyOrder,
+//   userOrders,
+//   listOrders,
+// } from "../controllers/orderController.js";
 import {
   placeOrder,
   verifyOrder,
-  userOrder,
+  userOrders,
   listOrders,
+  updateStatus,
 } from "../controllers/orderController.js";
 
 const orderRouter = express.Router();
