@@ -1,6 +1,12 @@
 import "./PlaceOrder.css";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
+
+// import "./PlaceOrder.css";
+// import React, { useContext, useState } from "react";
+// import { StoreContext } from "../../context/StoreContext";
 
 const PlaceOrder = () => {
 
@@ -23,8 +29,9 @@ const PlaceOrder = () => {
   const onChangeHandler = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setData(data => (...data, [name]: value} )
-  
+    // setData(data => (...data, [name]: value} ));
+    setData((data) => ({ ...data, [name]: value })); 
+
  }
 
 // useEffect(() => {
@@ -50,7 +57,7 @@ const placeOrder = async (event) => {
   let response = await axios.post(url + "/api/order/place", orderData, { headers: { token } });
   if (response.data.success) {
     const { session_url } = response.data;   
-    window.loaction.replace(session_url);
+    window.location.replace(session_url);
   }
   else {
     alert("Error");

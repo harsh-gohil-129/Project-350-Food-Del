@@ -1,3 +1,4 @@
+import axios from "axios";
 import { createContext, useEffect, useState } from "react";
 import { food_list } from "../assets/assets";
 
@@ -26,9 +27,14 @@ await axios.post(url+"/api/cart/add",{itemId},{headers:{token}})
     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
   }
 
-  if (token) {
-   await async axios.post(url+"/api/cart/remove",{itemId},{headers:{token}})
-        }
+//   if (token) {
+//      await axios.post(url + "/api/cart/remove", { itemId }, { headers: { token } });
+   //         }
+   
+   if (token) {
+      await axios.post(url + "/api/cart/remove", { itemId }, { headers: { token } });
+    }
+    
      }
   const getTotalCartAmount = () =>{
    let totalAmount =0;
