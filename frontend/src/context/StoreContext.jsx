@@ -1,6 +1,7 @@
-import axios from "axios";
 import { createContext, useEffect, useState } from "react";
 import { food_list as foodData } from "../assets/assets";
+
+// import axios from "axios";
 
 // import axios from "axios";
 // import { createContext, useEffect, useState } from "react";
