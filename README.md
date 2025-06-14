@@ -1,8 +1,8 @@
-![IMG_20250613_200143_940~2](https://github.com/user-attachments/assets/aacf8646-02b4-41c7-976d-f0dc0a184d43)
-![IMG_20250613_200143_940~2](https://github.com/user-attachments/assets/e77f1f9c-a848-40bb-b989-2dec86db6093)
+
 🍽️ Project-350: Full Stack Food Ordering Website / App
 
 Project-350 is a full-featured food ordering website and app built using React JS, Node.js, Express.js, MongoDB, and integrated with the Stripe payment gateway. This project includes a modern frontend for users, a backend API server, and an admin panel to manage the system.
+![fooddel_featured_img-WNonPA3T](https://github.com/user-attachments/assets/2b0b542a-fe24-45e4-bfa8-43f00fe8bf34)
 
 🛠️ What We Built
 
@@ -74,6 +74,7 @@ Use npm install in both the frontend and backend directories to install required
 ![Screenshot_20250614-061117](https://github.com/user-attachments/assets/0b6d9472-c2a7-4b9c-878b-1aa69717f1c9)
 ![Screenshot_20250614-061127](https://github.com/user-attachments/assets/7dfb4189-d9be-46d6-a643-4dade4f697e4)
 
+![IMG_20250613_200143_940~2](https://github.com/user-attachments/assets/fb5d7e7c-9155-4aa1-9c62-feddd74b8eba)
 3. Configure Environment Variables
 Create a .env file in the backend directory with your MongoDB URI, JWT secret, and Stripe secret key.
 
