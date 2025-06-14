@@ -87,7 +87,7 @@ npm start
 
 ```bash
 cd frontend
-npm start
+npm run dev
 ```
 
 
@@ -118,9 +118,9 @@ npm start
 ![Screenshot\_20250614-061127](https://github.com/user-attachments/assets/7dfb4189-d9be-46d6-a643-4dade4f697e4)
 ![IMG\_20250613\_200143\_940\~2](https://github.com/user-attachments/assets/fb5d7e7c-9155-4aa1-9c62-feddd74b8eba)
 
--
 
 ✅ If you have any questions or need additional details, feel free to reach out!
+
 ✨ Happy coding! 🍽✨
 
 
