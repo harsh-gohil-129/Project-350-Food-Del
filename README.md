@@ -1,3 +1,4 @@
+![IMG_20250613_200143_940~2](https://github.com/user-attachments/assets/e77f1f9c-a848-40bb-b989-2dec86db6093)
 🍽️ Project-350: Full Stack Food Ordering Website / App
 
 Project-350 is a full-featured food ordering website and app built using React JS, Node.js, Express.js, MongoDB, and integrated with the Stripe payment gateway. This project includes a modern frontend for users, a backend API server, and an admin panel to manage the system.
