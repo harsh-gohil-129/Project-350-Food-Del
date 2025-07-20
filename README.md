@@ -61,19 +61,6 @@ npm install
 ```
 
 
-
-### 3️⃣ Configure Environment Variables
-
-Create a `.env` file in the `backend` directory with your credentials:
-
-```txt
-MONGODB_URI=<your-mongodb-uri>
-JWT_SECRET=<your-jwt-secret>
-STRIPE_SECRET_KEY=<your-stripe-secret_key>
-```
-
-
-
 ### 4️⃣ Run the Backend Server
 
 ```bash
@@ -89,16 +76,6 @@ npm start
 cd frontend
 npm run dev
 ```
-
-
-
-## 🔮 Upcoming Improvements
-
-* **Mobile version** using React Native
-* Real-time delivery tracking
-* Review and rating system for food items
-* Email notifications for orders
-
 
 
 ## 📸 Screenshots
